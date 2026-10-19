@@ -1,12 +1,8 @@
 //テンプレートは以下を使用
-//https://github.com/saya38t/CLanguage_New/blob/main/template.cpp
+//https://github.com/saya38t/Libraries_Solutions_saya38t/blob/main/template.cpp
 
 #include <bits/stdc++.h>
 using namespace std;
-/*
-include atcoder;
-using namespace atcoder;//必要なとき貼る
-*/
 using ll = long long;
 #define rep(i,n) for(ll i=0; i<(ll)(n); ++i)
 using P = pair<ll,ll>;
