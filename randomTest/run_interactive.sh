@@ -20,8 +20,8 @@
 set -e
 
 # bash run_interactive.sh [回数]
-g++ -std=gnu++17 -O2 main.cpp -o main
-g++ -std=gnu++17 -O2 judge.cpp -o judge
+g++ -std=gnu++20 -O2 main.cpp -o main
+g++ -std=gnu++20 -O2 judge.cpp -o judge
 
 for ((i=1; i<=${1:-100}; i++)); do
     d=$(mktemp -d)
