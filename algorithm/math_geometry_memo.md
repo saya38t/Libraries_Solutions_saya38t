@@ -24,6 +24,9 @@ AC=(cx-ax,cy-ay)
 ABとACの外積
 = (bx-ax)*(cy-ay) - (by-ay)*(cx-ax)
 
+2点の関係
+= bx*cy - by*cx(b基準、bに対してcは？)
+
 外積>0 → CはABの左側（反時計回り）
 外積<0 → CはABの右側（時計回り）
 外積=0 → 3点が一直線上
