@@ -17,6 +17,7 @@ const vector<ll>dj={1,-1,0,1,-1,-1,1,0};
 //longlong仕様
 //auto f=[&](vector<int>A, int x){//ラムダ式}
 void solve() {
+  ll x1,x2,x3;  cin >> x1 >> x2 >> x3;
   
   return;
 }
@@ -24,6 +25,7 @@ void solve() {
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
-  
+  ll t; cin >> t;
+  rep(i,t) solve();
   return 0;
 }
