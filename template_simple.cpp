@@ -31,3 +31,7 @@ double to_deg(double rad) {return rad*(180.0/PI);} //radから度数法
 const vector<ll>di={1,1,1,0,0,-1,-1,-1};//表移動(8)
 const vector<ll>dj={1,-1,0,1,-1,-1,1,0};
 */
+
+/*
+fixed << setprecision(桁数) << val
+*/
