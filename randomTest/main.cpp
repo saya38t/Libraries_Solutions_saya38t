@@ -8,6 +8,10 @@ using ll = long long;
 
 void solve(string a,string b)
 {
+    if(a==b) {
+        cout << 0 << '\n';
+        return;
+    }
     string sa="",sb=b;
     sb.pop_back(); sa+=a[0];
     for (ll i=1;i<=a.size();i++)
@@ -17,7 +21,6 @@ void solve(string a,string b)
             cout << i%(a.size()) << '\n';
             return;
         }
-        if (i==a.size()) break;
         sa+=a[i];
         sb.pop_back();
     }
