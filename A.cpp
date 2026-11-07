@@ -17,14 +17,39 @@ const vector<ll>dj={1,-1,0,1,-1,-1,1,0};
 //longlong仕様
 //auto f=[&](vector<int>A, int x){//ラムダ式}
 void solve() {
-  
+  string A,B; cin >> A >> B;
+  string S=B+A+A;
+  ll n=S.size();
+  ll lenA=A.size();
+  //z-algorithm
+  vector<ll>match(n,-1);
+  match[0]=B.size();
+  ll l=1,r=1;
+  for(ll i=1; i<n; i++){
+    if(match[i-l]<r-i){
+      match[i]=match[i-l];
+      if(i>=B.size() && match[i]>=B.size()) {
+        cout << i-B.size() << endl;
+        return;
+      }
+      continue;
+    }
+    l=i;
+    while(S[r]==B[r-l]) r++;
+    match[l]=r-l;
+    if(l>B.size() && match[l]>=B.size()) {
+      cout << l-B.size() << endl;
+      return;
+    }
+  }
+  cout << -1 << endl;
   return;
 }
 
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
-  ll n; cin >> n;
-  
+  ll t; cin >> t;
+  rep(i,t) solve();
   return 0;
 }
